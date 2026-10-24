@@ -36,3 +36,4 @@ Current implementation: a responsive branded shell with Learn/Sandbox navigation
 
 Verification on 2026-10-24: after dependency installation, the shell test (1 test), lint, TypeScript check, and production build all passed. Added the Vite client type declaration for CSS imports. Browser layout and interaction verification are still pending.
 # subnet-city
+# subnet-city
