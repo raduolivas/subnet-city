@@ -1,0 +1,41 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #1e2a3a;
+  background: #eef2f7;
+  font-synthesis: none;
+  line-height: 1.6;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button { font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid #163b7a; outline-offset: 4px; }
+h1, h2, h3 { color: #163b7a; line-height: 1.2; }
+h1 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.5rem); }
+h2 { margin-top: 0; font-size: 1.3rem; }
+p { max-width: 65ch; }
+.app-shell { max-width: 1440px; margin: auto; padding: 28px; }
+.app-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.eyebrow { color: #36577d; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 8px; }
+nav { display: flex; background: #dcebff; border-radius: 12px; padding: 5px; gap: 5px; }
+nav button { padding: 10px 20px; border: 0; border-radius: 8px; background: transparent; color: #163b7a; font-weight: 700; }
+nav button[aria-pressed='true'] { background: #2f6bff; color: white; }
+.intro { padding: 44px 0 24px; }
+.intro h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 12px; }
+.status { font-size: .9rem; color: #36577d; }
+.workspace-layout { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 20px; }
+.panel { background: white; border: 1px solid #d5dfea; border-radius: 18px; padding: 24px; }
+.note { border-left: 3px solid #20b8a8; padding-left: 14px; margin-top: 28px; }
+.workspace { min-height: 360px; background: linear-gradient(145deg, #fff, #edf5ff); }
+.workspace-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.badge { border: 1px solid #b8ccea; border-radius: 20px; padding: 3px 10px; font-size: .8rem; color: #163b7a; }
+.empty-workspace { padding: 28px 12px; text-align: center; max-width: 480px; margin: auto; }
+.network-mark { font-size: 4rem; color: #2f6bff; line-height: 1; }
+.timeline { margin-top: 20px; }
+.timeline p { margin-bottom: 0; }
+@media (max-width: 700px) {
+  .app-shell { padding: 18px; }
+  .app-header { align-items: flex-start; flex-direction: column; }
+  .intro { padding-top: 30px; }
+  .workspace-layout { grid-template-columns: 1fr; }
+  .panel { padding: 20px; }
+}
